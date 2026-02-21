@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+ --background: #0b0e14;
+  --foreground: #e2e8f0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-md border border-white/10;
+  }
+  .glass-button {
+    @apply bg-white/[0.03] backdrop-blur-md border border-white/10 text-sm px-4 py-2 rounded;
+    
+    transition: background-color 0.3s, border-color 0.3s; 
+      
+    &:hover {
+      @apply bg-white/[0.05] border-white/20;
+    }
+  }
+}

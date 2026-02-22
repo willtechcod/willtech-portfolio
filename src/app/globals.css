@@ -1,21 +1,27 @@
 @import "tailwindcss";
 
 :root {
- --background: #0b0e14;
+  /* Um tom de cinza azulado bem escuro (mais profissional que o preto puro) */
+  --background: #0b0e14;
   --foreground: #e2e8f0;
+  /* Definindo a cor da sua marca aqui para usar no CSS e no Tailwind */
+    --react-blue: #00d8ff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-react-blue: var(--react-blue);
+    /* Ajustando para as fontes que o Next.js carrega por padrão */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* Forçando o tema escuro como padrão para portfólios tech */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b0e14;
+      --foreground: #e2e8f0;
   }
 }
 
@@ -26,21 +32,45 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-inter), sans-serif;
+  /* Alterado para var(--font-sans) para bater com o Geist do layout.tsx */
+    font-family: var(--font-sans), system-ui, sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @layer components {
   .glass-card {
-    @apply bg-white/[0.03] backdrop-blur-md border border-white/10;
+    /* Adicionei um brilho interno sutil */
+      @apply bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-xl;
+      box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.05);
   }
+
   .glass-button {
-    @apply bg-white/[0.03] backdrop-blur-md border border-white/10 text-sm px-4 py-2 rounded;
+    /* Melhorei a transição e o feedback visual */
+      @apply bg-white/[0.03] backdrop-blur-md border border-white/10 text-sm px-4 py-2 rounded transition-all duration-300 ease-in-out cursor-pointer inline-flex items-center justify-center;
     
-    transition: background-color 0.3s, border-color 0.3s; 
-      
-    &:hover {
-      @apply bg-white/[0.05] border-white/20;
+      &:hover {
+        @apply bg-white/[0.08] border-white/30 scale-[1.02];
+      }
+    
+      &:active {
+        @apply scale-95;
+      }
     }
-  }
+    }
+/* Personalização da barra de rolagem para combinar com o tema */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 5px;
+  border: 2px solid var(--background);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--react-blue);
 }

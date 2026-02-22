@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WillTech Code | Software Engineer",
-  description: "Portfólio profissional de William A. S. - Desenvolvedor Full Stack especializado em React e Next.js.",
+  title: "William | Software Engineer",
+  description: "Portfolio de desenvolvedor Full Stack especializado em React, Next.js e Node.js.",
   icons: {
     icon: "/favicon.ico", 
   }

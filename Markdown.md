@@ -3,8 +3,8 @@
 
 📍 Joinville, SC - Brasil  
 📞 +55 (47) 99164-7104  
-✉️ william.contato@willtechcode.com.br 
-🔗 [LinkedIn](https://www.linkedin.com/in/williamconceicao/) | [GitHub](https://github.com/willtechcod) | [Portfólio](https://willtechcode.com.br)
+✉️ contato@willtechcode.com.br 
+🔗 [LinkedIn](https://www.linkedin.com/in/williamconceicao/) | [GitHub](https://github.com/willtechcod) | [Portfólio](https://willtech-portfolio.vercel.app)
 
 ---
 
@@ -50,9 +50,12 @@ Desenvolvedor Full Stack com sólida experiência na construção de aplicaçõe
 ---
 
 ## 🏆 PROJETOS EM DESTAQUE
-1. **Coffee Delivery:** E-commerce completo com gestão de estado e checkout fluido.
-2. **In.Orbit:** Sistema de gestão de metas com Node.js, React e banco de dados relacional.
-3. **DT Money:** Dashboards financeiros dinâmicos com consumo de APIs e animações.
+1. **Inova Tech Logística:** Plataforma SaaS de WMS (dashboard web + app mobile + API em tempo real) multi-tenant. https://inovatechlogistica.com.br
+2. **Tik Hot:** Plataforma de criadores com feed vertical, assinaturas via Stripe Connect, lives e painel admin. https://tikhot.site
+3. **Cardápio Digital 3D:** Cardápio interativo com cards 3D, carrinho, pedidos com Kanban e notificação no WhatsApp.
+4. **Barber-Pró:** Sistema de barbearia com assinaturas mensais, agendamentos e pagamentos via Stripe.
+5. **Sistema de Pedidos:** Cardápio digital de hamburgueria vinculado ao WhatsApp para finalizar pedidos.
+6. **Portfólio WillTech:** Portfólio de alta performance com Next.js, Tailwind CSS e animações. https://willtech-portfolio.vercel.app
 
 ---
 

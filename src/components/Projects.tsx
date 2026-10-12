@@ -30,6 +30,29 @@ const projects = [
     imageUrl: "https://raw.githubusercontent.com/willtechcod/barberpro/main/.GitHub/BarberPro.gif",
     stars: 20
   },
+  {
+    title: "Inova Tech Logística",
+    description: "Plataforma SaaS de gestão logística (WMS) para chão de fábrica: dashboard web para gestores e app mobile para operadores, com separação, conferência e carregamento em tempo real (SSE) e arquitetura multi-tenant.",
+    githubUrl: "https://github.com/willtechcod/inova-tech-web",
+    deployUrl: "https://inovatechlogistica.com.br/",
+    tags: ["Next.js", "React Native", "Node.js", "Express", "Prisma", "MySQL", "TypeScript"],
+    imageUrl: "/projects/inovatech-logistica.jpg"
+  },
+  {
+    title: "Tik Hot",
+    description: "Plataforma de criadores de conteúdo com feed vertical estilo TikTok, assinaturas via Stripe Connect, lives com Agora.io, mensagens diretas e painel admin — API Express, app Expo e web em Next.js.",
+    githubUrl: "https://github.com/willtechcod/Tik-Hot",
+    deployUrl: "https://tikhot.site/",
+    tags: ["Next.js", "React Native", "Express", "Prisma", "PostgreSQL", "Stripe", "Agora.io"],
+    imageUrl: "/projects/tikhot.jpg"
+  },
+  {
+    title: "Cardápio Digital 3D",
+    description: "Cardápio digital interativo com cards 3D (efeito tilt e brilho especular), carrinho, pedidos com Kanban e notificação no WhatsApp, além de painel administrativo e API Node.",
+    githubUrl: "https://github.com/willtechcod/cardapio-3d-web",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Express", "Prisma", "PostgreSQL", "Cloudinary"],
+    imageUrl: "/projects/cardapio-3d.jpg"
+  },
 ];
 const containerVariants = {
   hidden: { opacity: 0 },

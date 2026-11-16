@@ -10,7 +10,7 @@ export default function Contact() {
 
   if (state.succeeded) {
     return (
-      <section id="contact" className="py-24 px-6 max-w-6xl mx-auto text-center">
+      <section id="contact" className="py-12 md:py-16 px-6 max-w-6xl mx-auto text-center">
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -35,7 +35,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 px-6 max-w-6xl mx-auto">
+    <section id="contact" className="py-12 md:py-16 px-6 max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="text-3xl font-mono text-reactBlue mb-4">Contacto</h2>
         <p className="text-foreground/60">Interessado em escalar o seu projeto ou uma nova oportunidade?</p>

@@ -11,7 +11,7 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 max-w-6xl mx-auto overflow-hidden">
+    <section id="about" className="py-12 md:py-16 px-6 max-w-6xl mx-auto overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
         
         <motion.div 

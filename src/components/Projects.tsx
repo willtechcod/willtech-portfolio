@@ -66,7 +66,7 @@ const containerVariants = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
+    <section id="projects" className="py-12 md:py-16 px-6 max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

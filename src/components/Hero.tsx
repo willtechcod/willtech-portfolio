@@ -4,7 +4,7 @@ import { Terminal, ChevronRight, Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-20 px-6 overflow-hidden">
+    <section className="relative min-h-[min(90vh,760px)] flex items-center justify-center pt-20 px-6 overflow-hidden">
       
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-reactBlue/10 rounded-full blur-[120px] -z-10" />
 
@@ -70,7 +70,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-20 p-4 rounded-lg bg-black/40 border border-white/5 font-mono text-xs text-foreground/40 flex items-center gap-4"
+          className="mt-14 p-4 rounded-lg bg-black/40 border border-white/5 font-mono text-xs text-foreground/40 flex items-center gap-4"
         >
           <div className="flex gap-1.5">
             <div className="w-2.5 h-2.5 rounded-full bg-red-500/20" />

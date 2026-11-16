@@ -11,7 +11,7 @@ export default function Home() {
     <main className="relative min-h-screen">
       <Navbar />
       <Hero />
-      <div className="flex flex-col gap-y-20">
+      <div className="flex flex-col gap-y-4">
         <About />
         <Projects />
         <Experience />
